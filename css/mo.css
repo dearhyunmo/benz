@@ -1,0 +1,106 @@
+@media all and (max-width:759px){
+    #wrap{width: 100%; position: relative; float: left; background-color: #131313;}
+    
+    section,footer{width: 100%; float: left; position: relative;}
+    #logo{width:75px; height: 40px; position:fixed;
+        top: 30px; right: 30px; z-index: 9999;}
+    #logo>a>#logo_img{width: 100%; height: auto;}
+    #sec_1{height:600px; background-image: url(../mo_img/mo_main_bg.jpg);
+        background-position: center; background-size: cover;}
+    
+    #sec_1_conWrap{width: 100%; height: auto; overflow: hidden; position: absolute; z-index: 9999;
+        bottom: 0px;}
+    #sec_1_textBox{width:45%; height: auto; font-family: 'EB Garamond', serif; color: white;  margin: 0 auto; text-align: center;}
+    #mo_textBorder{width: 80px; height: 5px; background-color: #9e0007; margin: 0 auto 100px auto;}
+    #sec_1_1text{font-size: 20px; font-weight: 200; padding-bottom: 5px;}
+    #sec_1_2text{font-size: 30px; font-weight: 200; padding-bottom: 5px;}
+    #sec_1_3text{font-size: 18px; font-weight: 200; padding-bottom: 15px;}
+    .car_img{width: 400px; height: auto; overflow: hidden; margin: 0 auto 80px auto;}
+    #red_car{width: 100%; height: auto; }
+    /*sec_1------------*/
+    
+    #sec_2{height:auto; overflow: hidden;margin:50px 0 100px 0;}
+    #sec_2_wrap{width:95%;/*1700*/ height: 100%; margin: 0 auto;}
+    .title_wrap{width: auto; height: auto;color:#fff; font-family: 'EB Garamond', serif;
+        margin-bottom:30px;}
+    .color_box{width: 4px; height: 20px; float: left; margin-top: 0px; margin-right: 10px; background-color: #989898;}
+    .title{width: auto; height: auto; font-size: 20px; font-weight: 500; margin-bottom: 7px;}
+    .text{width: auto; height: auto; font-size: 12px; font-weight: 300; font-family:'Noto Sans KR', sans-serif;}
+    .text>span{font-family: 'EB Garamond', serif; font-size: 14px;}
+    #sec_2_conWrap{width: 100%; height: auto; overflow: hidden;}
+    .sec_2_con{width: 49%; height: 300px; float: left; display: none;}
+    .sec_2_con>img{width: 100%; height: auto;}
+    .sec_2_textBox{display: none;}
+    .sec_2_title{width: auto; height: auto; font-size: 16px; font-weight: 400; margin-bottom: 20px; display: none;}
+    .sec_2_text{display: none;}
+    #sec_2_moWrap{width: 100%; height: auto; overflow: hidden;}
+    .sec_2_moCon_wrap{width: 49%; height: auto; float: left; margin-right: 2%;}
+    .sec_mo_img{width: 100%; height: auto; overflow: hidden;}
+    .sec_mo_img>img{width: 100%; height: auto;}
+    .marginnone{margin-right: 0;}
+    .sec_mo_text{width: auto; height: auto; color: white; font-size: 16px; margin-bottom: 20px;
+        font-family:'Noto Sans KR', sans-serif; padding-top: 10px;}
+    /*sec_2_1*/
+    
+    
+    #sec_3{width: 100%; height: auto; overflow: hidden; background-image: url(../mo_img/sec_3_bg.png); background-size: cover;}
+    #sec_3_wrap{width: 95%; height: 100%; margin: 0 auto;}
+    #sec_3_car{display:none;}
+    #sec_3_car>img{width: 100%; height: auto; }
+    #sec_3_conWrap{display: none;}
+    #sec_3_mo_wrap{width: 100%; height: auto;overflow: hidden;}
+    #mo_3_title{width:  60%; height: auto;color:#fff; font-family: 'EB Garamond', serif;
+        margin-bottom:30px; float: left; margin-top: 15px;}
+    #mo_3_colorBox{width: 4px; height: 20px; float: left; margin-top: 0px; margin-right: 10px; background-color: #989898;}
+    .title_3{width: auto; height: auto; font-size: 20px; font-weight: 500; padding-bottom: 15px;}
+    .text_3{width: auto; height: auto; font-size: 9px; font-weight: 300; font-family:'Noto Sans KR', sans-serif; padding-bottom: 4px;}
+    #mo_img_car{width: 35%; height: auto; float: right;}
+    #mo_img_car>img{width: 100%; height: auto;}
+    #sec_3_moCon{width: 100%; height: auto; overflow: hidden;  margin-bottom: 30px;}
+    .sec_mo_3_con{width: 48%; height: auto; float: left; margin-bottom: 10px; }
+    .margin_R{margin-right: 4%;}
+    .sec_mo_3_con>img{width: 100%; height: auto;}
+    
+    
+    /*sec_3_---------------------*/
+    #sec_4_conWrap{display: none;}
+    #sec_4_wrap{width: 90%; height: auto; overflow: hidden; margin: 50px auto;}
+    #mo_img_wrap{width: 100%; height: auto; overflow: hidden;}
+    .sec_4_mo_img{width: 49%; height: auto; overflow: hidden;float: left; margin-right: 2%;}
+    .sec_4_mo_img>img{width: 100%; height: auto;}
+    .sec_4_mo_img:nth-child(2){margin-right: 0; margin-bottom: 10px;}
+    .sec_4_mo_img:nth-child(4){margin-right: 0;}
+    
+    
+    
+    #sec_5{height: auto; overflow: hidden; margin-bottom: 80px;}
+    #sec_5_wrap{width: 95%; height: 100%; margin: 0 auto;}
+    #sec_5_conWrap{width: 100%; height: auto; overflow: hidden;}
+    #sec_5_topBox{width: 100%; height: auto; overflow: hidden; margin-bottom: 10px; }
+    #sec_5_topBox>img{width: 100%; height: auto;}
+    #sec_5_botBox{width: 100%; height: auto; overflow: hidden;}
+    #sec_5_botIn_leftBox{width: 49%; height: auto; overflow: hidden; float: left; margin-right: 2%;}
+    .in_img{width: 100%; height: auto; overflow: hidden; margin-bottom: 10px;}
+    .in_img>img{width: 100%; height: auto;}
+    #sec_5_botIn_rightBox{width: 49%; height: auto; overflow: hidden; float: right;}
+    #sec_5_botIn_rightBox>img{width: 100%; height: auto;}
+    #sec_5_bottomBox{width: 100%; height: auto; overflow: hidden;}
+    #sec_5_bottomBox>img{width: 100%; height: auto;}
+    
+    #sec_6{height: 60px; color: white; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+    #sec_6>p{width: 300px; height: 100%; border: 1px solid #fff; margin: 0 auto; text-align: center; line-height: 60px;}
+    #sec_6>p>span{ font-family: 'EB Garamond', serif; font-size: 18px;}
+    
+    footer{width: 100%; height: 400px; margin: 100px 0 0 0; font-family :'Noto Sans KR',sans-serif;
+        background-image: url(../img/footer_bg.jpg); background-size: cover; background-position: center;}
+    #footer_img{width:150px; height: 30px; margin: 100px auto 30px auto;}
+    #footer_img>a{width: auto; height: auto; overflow: hidden; float: left; margin-right: 20px;}
+    #footer_img>a:last-child{margin-right: 0;}
+    #footer_img>a>img{width: auto; height: auto;}
+    #in_footer{width: 350px; height: auto; overflow: hidden; color: white; margin: 30px auto;}
+    #in_footer>p>a{color: #d3d3d3; text-decoration: none; text-align: center;}
+    #in_footer>p{width:auto; height: auto; margin-right: 15px; /*auto가 자꾸 100%로 잡힘*/
+        float: left; font-size: 12px;}
+    #copy{width: 100%; height: auto; }
+    #copy>p{width: auto; height: auto; text-align: center; font-size: 14px; padding-bottom: 8px; color: #6e6e6e;}
+}/*end*/

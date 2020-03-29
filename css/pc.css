@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media all and (min-width:1000px){
+    #wrap{width: 100%; position: relative; float: left; background-color: #131313;}
+    
+    section,footer{width: 100%; float: left; position: relative;}
+    #logo{width:130px; height: 90px;margin-top: 20px; position:fixed;
+        top: 0; right: 50px; z-index: 9999;}
+    #logo>a>#logo_img{width: 100%; height: auto;}
+    #sec_1{height:800px; background-image: url(../img/main_bg.png);
+        background-position: center; background-size: cover;}
+    
+    #sec_1_conWrap{width: 100%; height: 600px; position: absolute; z-index: 9999;
+        bottom:0px;}
+    #sec_1_textBox{width: auto; height: auto; font-family: 'EB Garamond', serif; color: white; margin-left: 15%; position: relative; overflow: hidden;}
+    #text_bd{width: 8px; height: 0px; background-color: #9e0007; float: left;
+        position: absolute; bottom: 20px; z-index: 999;
+        animation: box 2s normal; animation-delay: s; animation-fill-mode: forwards;}
+    @keyframes box{
+        0%{height: 0;}
+        100%{ height: 120px;}
+        }
+    
+    #sec_1_1text{font-size: 30px; font-weight: 200; padding-bottom: 5px; margin-left: -200px;
+            width: 150px; height: auto; animation: title1 2s normal; 
+            animation-fill-mode: forwards; animation-delay: 1.5s;}
+    @keyframes title1{
+        0%{margin-left: -200px; opacity: 0;}
+        100%{margin-left: 20px; opacity: 1;}
+    }
+     @keyframes title2{
+        0%{margin-left: -350px; opacity: 0;}
+        100%{margin-left: 20px; opacity: 1;}
+    }
+     @keyframes title3{
+        0%{margin-left: -300px; opacity: 0;}
+        100%{margin-left: 20px; opacity: 1;}
+    }
+    #sec_3_mo_wrap{display: none;}
+    #sec_1_2text{font-size: 60px; font-weight: 200; padding-bottom: 5px;  margin-left: -350px;
+        animation: title2 2s normal; animation-fill-mode: forwards; animation-delay: 1s;}
+    #sec_1_3text{font-size: 20px; font-weight: 200; padding-bottom: 20px;  margin-left: -300px;
+        animation: title3 2s normal;animation-fill-mode: forwards;  animation-delay:0s;}
+    .car_img{width: 900px; height: auto; overflow: hidden; margin: 0 auto; 
+        animation-name: car; animation-duration: 4s; animation-play-state: running;
+        animation-direction: normal; animation-timing-function: ease;
+        position: absolute; top: 80px; right: 20%;}
+    
+    @keyframes car{
+        0%{top: 100px; right: 100px; width: 200px;}
+        100%{width: 900px; top: 80px; right: 20%;}
+    }
+    #red_car{width: 100%; height: auto; }
+    
+    #sec_2{height:auto; overflow: hidden;margin: 100px 0;}
+    #sec_2_wrap{width:88.541%;/*1700*/ height: 100%; margin: 0 auto;}
+    .title_wrap{width: auto; height: auto;color:#fff; font-family: 'EB Garamond', serif;
+        margin-bottom: 50px;}
+    .color_box{width: 7px; height: 40px;margin-top: 5px; float: left; margin-right: 15px; background-color: #989898;}
+    .title{width: auto; height: auto; font-size: 48px; font-weight: 500; margin-bottom: 15px; line-height: 48px;}
+    .text{width: auto; height: auto; font-size: 18px; font-weight: 500; font-family:'Noto Sans KR', sans-serif;}
+    .text>span{font-family: 'EB Garamond', serif; font-size: 24px;}
+    
+    #sec_2_conWrap{width: 100%; height: auto; overflow: hidden;}
+    #sec_2_topCon{width: 100%; height: auto; overflow: hidden; }
+    #sec_2_con_1{width: 100%; height: auto; overflow: hidden; opacity: 0;
+        margin-left: -100px;}
+    #sec_2_img_1{width: 48.823%; height: auto; overflow: hidden;float: left;}
+    #sec_2_img_1>img{width: 100%; height: auto;}
+    .sec_2_textBox{width: auto; height: auto; overflow: hidden; color: white; font-family: 'Noto Sans KR', sans-serif;}
+    .sec_2_title{width: auto; height: auto; font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+    .sec_2_text{width: auto; height: auto; font-size: 18px; margin-bottom: 5px; letter-spacing: ; font-weight: 200;}
+    #left{padding-left: 30px;}/*물어보기 마진 안들어감*/
+    .border_m{margin-bottom: 50px;}
+    .sec_2_textBorder{width: 50px; height: 3px; background-color: #ccc; }
+    /*sec_2_1*/
+    #sec_2_con_2{width: auto; height: auto; overflow: hidden; margin-top: -100px;
+        opacity: 0; margin-left:100px; }
+    #sec_2_img_2{width: 44.117%; height: auto; overflow: hidden; float: right;}
+    #sec_2_img_2>img{width: 100%; height: auto;}
+    .sec_2_textBox{width: auto; height: auto; overflow: hidden; color: white; font-family: 'Noto Sans KR', sans-serif;}  
+    .sec_2_textBorder{width: 50px; height: 3px; background-color: #ccc; }
+    .right_b{float: right;}
+    .right_m{text-align: right;}
+    .right_p{padding-right: 30px; padding-top: 248px;}
+    /*sec_2_2*/
+    #sec_2_con_3{width: 100%; height: auto; overflow: hidden; margin-top: 80px;
+        opacity: 0; margin-left: -100px;}
+    #sec_2_img_3{width: 44.117%; height: auto; overflow: hidden; float: left;}
+    #sec_2_img_3>img{width: 100%; height: auto;}
+    /*sec_2_3*/
+    #sec_2_con_4{width: 100%; height: auto; overflow: hidden; margin-top: -80px;
+        opacity: 0; margin-left:100px;}
+    #sec_2_img_4{width: 49.470%; height: auto; overflow: hidden;float: right;}
+    #sec_2_img_4>img{width: 100%; height: auto;}
+    .right_4{padding-top: 220px; padding-right: 30px;}
+    .sec_2_con>img{transition-duration: 1s;}
+    
+    .sec_2_con:hover>img{transform: scale(1.2);}
+    /*sec_2-----------------------------*/
+    
+    #sec_3{width: 100%; height: 700px; background-image: url(../img/sec_3_bg.jpg); 
+        background-size: cover; background-position: center;}
+    #sec_3_wrap{width: 72.916%; height: 100%; margin: 0 auto;}
+    #sec_3_car{width: 39.571%; height: auto; overflow: hidden; float: left; margin-top: 250px; margin-left: 50px; opacity: 0;}
+    #sec_3_car>img{width: 100%; height: auto; }
+    #sec_3_conWrap{width: 43.571%; height: auto; overflow: hidden; float: right;}
+    .sec_3_con{width: 46.721%; height: auto; overflow: hidden; float: left;}
+    .sec_3_con>img{width: 100%; height: auto; transition-duration: 1s;}
+    .margin_R{margin-right: 6.558%;}
+    #mar_bot{margin-bottom: 25px;}
+    .sec_3_titleWrap{width:auto; text-align: left; margin-top: 50px;}
+    #mo_img_wrap{display: none;}
+    
+    .sec_3_con:hover>img{transform: rotate(10deg) scale(1.2);}
+    /*sec_3_---------------------*/
+    #mo_img_wrap{display: none;}
+    #sec_4{width: 100%; height: auto; overflow: hidden; background-image: url(../img/sec_4_bg.jpg); margin: 100px 0;
+        background-size: cover;}
+    #sec_4_wrap{width: 72.916%; height: 100%; margin: 0 auto;}
+    .sec_4_con{width: 23.5%; height: auto; overflow: hidden; float: left; margin-right: 2%; position: relative; margin-bottom: 50px;}
+    .sec_4_con:last-child{margin-right: 0;}
+    .sec_4_con>img{width: 100%; height: auto;}
+    #sec_4_titleWrap{margin-top: 50px;}
+    .sec_4_hoverBox{display: none;
+        width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: absolute; top: 0; left: 0;
+        font-family: 'Noto Sans KR', sans-serif;}
+    .hover_text{width: auto; height: auto; font-size: 24px; text-align: center; color: white; margin-top: 40%; 
+        font-weight: 400;}
+    .hover_more{width: 130px; height: 30px; font-size: 14px; text-align: center; color: white;
+        border: 2px solid #fff; margin: 20px auto; line-height: 30px; border-radius: 10px;}
+    .hover_more:hover{cursor: pointer;}
+    #sec_2_moWrap{display: none;}
+    .sec_4_con:hover>.sec_4_hoverBox{display: block;}
+    
+    
+    #sec_5{height: auto; overflow: hidden; margin-bottom: 100px;}
+    #sec_5_wrap{width: 72.916%; height: 100%; margin: 0 auto;}
+    #sec_5_conWrap{width: 100%; height: auto; overflow: hidden;}
+    #sec_5_topBox{width: 100%; height: auto; overflow: hidden; margin-bottom: 30px; }
+    #sec_5_topBox>img{width: 100%; height: auto;}
+    #sec_5_botBox{width: 100%; height: auto; overflow: hidden;}
+    #sec_5_botIn_leftBox{width: 49%; height: auto; overflow: hidden; float: left; margin-right: 2%;}
+    .in_img{width: 100%; height: auto; overflow: hidden; margin-bottom: 30px;}
+    .in_img>img{width: 100%; height: auto;}
+    #sec_5_botIn_rightBox{width: 49%; height: auto; overflow: hidden; float: right;}
+    #sec_5_botIn_rightBox>img{width: 100%; height: auto;}
+    #sec_5_bottomBox{width: 100%; height: auto; overflow: hidden;}
+    #sec_5_bottomBox>img{width: 100%; height: auto;}
+    
+    #sec_6{height: 60px; color: white; font-family: 'Noto Sans KR', sans-serif; font-size: 18px;}
+    #sec_6>p{width: 600px; height: 100%; border: 1px solid #fff; margin: 0 auto; text-align: center; line-height: 60px;}
+    #sec_6>p:hover{cursor: pointer;}
+    #sec_6>p>span{ font-family: 'EB Garamond', serif; font-size: 24px;}
+    
+    footer{width: 100%; height: 400px; margin: 100px 0 0 0; font-family :'Noto Sans KR',sans-serif;
+        background-image: url(../img/footer_bg.jpg); background-size: cover; background-position: center;}
+    #footer_img{width:150px; height: 30px; margin: 100px auto 50px auto;}
+    #footer_img>a{width: auto; height: auto; overflow: hidden; float: left; margin-right: 20px;}
+    #footer_img>a:last-child{margin-right: 0;}
+    #footer_img>a>img{width: auto; height: auto;}
+    #in_footer{width: 500px; height: auto; overflow: hidden; color: white; margin: 50px auto;}
+    #in_footer>p>a{color: #d3d3d3; text-decoration: none; text-align: center;}
+    #in_footer>p{width:auto; height: auto; margin-right: 20px; /*auto가 자꾸 100%로 잡힘*/
+        float: left; font-size: 18px;}
+    #copy{width: 100%; height: auto; }
+    #copy>p{width: auto; height: auto; text-align: center; font-size: 14px; padding-bottom: 8px; color: #6e6e6e;}
+    
+    
+    
+    
+    
+    
+}/*end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
